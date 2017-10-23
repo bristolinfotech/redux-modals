@@ -35,6 +35,7 @@ export class ModalStack extends React.Component<ModalStackInnerProps, ModalStack
           key={`Modal${modal.id}`}
           modalId={modal.id}
           modalData={modal.data}
+          modalName={modal.name}
           closeModal={(response: any) => this.props.closeModal(modal.id, modal.name, response)}
         />
       );

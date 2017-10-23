@@ -26,7 +26,7 @@ var ModalStack = (function (_super) {
             var config = _this.getModalConfig(modal.name);
             if (config) {
                 var ModalComponent = config.component;
-                return (React.createElement(ModalComponent, __assign({}, config.props, { key: "Modal" + modal.id, modalId: modal.id, modalData: modal.data, closeModal: function (response) { return _this.props.closeModal(modal.id, modal.name, response); } })));
+                return (React.createElement(ModalComponent, __assign({}, config.props, { key: "Modal" + modal.id, modalId: modal.id, modalData: modal.data, modalName: modal.name, closeModal: function (response) { return _this.props.closeModal(modal.id, modal.name, response); } })));
             }
             else {
                 return null;
