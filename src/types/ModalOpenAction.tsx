@@ -1,8 +1,8 @@
 import { Action } from 'redux';
 
-export interface ModalOpenAction extends Action {
+export interface ModalOpenAction<DataType> extends Action {
   payload: {
     name: string;
-    data: any;
+    data: DataType;
   };
 }

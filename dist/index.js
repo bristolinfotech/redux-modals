@@ -6,3 +6,5 @@ __export(require("./actions"));
 __export(require("./reducer"));
 __export(require("./selectors"));
 __export(require("./util"));
+__export(require("./components/ModalStack"));
+__export(require("./components/ConnectedModalStack"));

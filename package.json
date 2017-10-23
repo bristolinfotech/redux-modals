@@ -17,6 +17,11 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@types/react": "^16.0.18",
+    "@types/react-redux": "^5.0.10",
+    "@types/recompose": "^0.24.2",
+    "react-redux": "^5.0.6",
+    "recompose": "^0.26.0",
     "redux": "^3.7.2"
   },
   "devDependencies": {

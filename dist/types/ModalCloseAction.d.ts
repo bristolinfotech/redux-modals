@@ -1,7 +1,8 @@
 import { Action } from 'redux';
-export interface ModalCloseAction extends Action {
+export interface ModalCloseAction<ResponseType> extends Action {
     payload: {
         id: number;
-        response: any;
+        name: string;
+        response: ResponseType;
     };
 }

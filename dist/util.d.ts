@@ -1,4 +1,4 @@
 import { AnyAction } from 'redux';
 import { ModalCloseAction, ModalOpenAction } from './types';
-export declare function isModalOpenAction(action: AnyAction): action is ModalOpenAction;
-export declare function isModalCloseAction(action: AnyAction): action is ModalCloseAction;
+export declare function isModalOpenAction<DataType>(action: AnyAction): action is ModalOpenAction<DataType>;
+export declare function isModalCloseAction<ResponseType>(action: AnyAction): action is ModalCloseAction<ResponseType>;
